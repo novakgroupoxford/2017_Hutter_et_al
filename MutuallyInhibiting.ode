@@ -1,0 +1,16 @@
+# Phaseplane analysis for mutually inhibiting positive feedbacks.
+
+dX/dt = (kax + kax2*(X^n)/(Jx^n + X^n))*(Xt - X) - kd*X*Y/(Jy + Y)
+
+dY/dt = (kay + kay2*(Y^n)/(Jy^n + Y^n))*(Yt - Y) - kd*Y*X/(Jx + X)
+
+init Y=0
+
+p kax=0.0002, kax2=0.1
+p kay=0.0002, kay2=0.1, kd=0.1,
+p Jx=0.8, Jy=0.8, n=2
+p Xt=1, Yt=1
+
+@ xp=X, yp=Y, xlo=0, xhi=1, ylo=0, yhi=1, nmesh=300
+
+done
