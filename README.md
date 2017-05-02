@@ -2,4 +2,4 @@
 ODE files for mutually activating and mutually inhibiting network motifs
 
 ## ODE files
-The .ode files can be run using XPPAut to generate the phaseplanes of figure 1D,E. 
+The .ode files can be run using XPPAut to generate the phaseplanes of figures 1D and 1E. 
